@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up - Hotel Booking Service</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="image-holder">
+            <img src="login.avif" alt="">
+        </div> -->
+        <form id="signup-form">
+            <h2>Sign Up</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="new-email">Email:</label>
+            <input type="email" id="new-email" name="new-email" required>
+            
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="policy"> I agree to all the Terms and Privacy Policies
+                </label>
+            </div>
+
+            <button type="button" onclick="validateSignup()">Register Now</button>
+        </form>
+        
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <div class="social-login">
+            <p>Or</p>
+            <button type="button" class="facebook" onclick="loginWithFacebook()">Facebook</button>
+            <button type="button" class="google" onclick="loginWithGoogle()">Google</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

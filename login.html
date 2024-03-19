@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login - Hotel Booking Service</title>
+</head>
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" id="remember-me"> Remember Me
+                </label>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+            
+            <button type="button" onclick="validateLogin()">Login</button>
+            
+            <div class="social-login">
+                <p>Or</p>
+                <button type="button" class="facebook" onclick="loginWithFacebook()">Facebook</button>
+                <button type="button" class="google" onclick="loginWithGoogle()">Google</button>
+            </div>
+        </form>
+        
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
